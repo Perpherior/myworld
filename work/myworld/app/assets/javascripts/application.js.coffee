@@ -4,4 +4,6 @@
 #= require vendors/angular
 #= require vendors/underscore
 #= require vendors/angular-route
+#= require vendors/angular-resource
+
 #= require myWorld

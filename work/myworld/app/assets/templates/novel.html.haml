@@ -5,5 +5,5 @@
 .container
 %br
   %ul
-    %li{"data-ng-repeat" => "book in books | filter:name "}
-      %h4 {{book.name}} - {{book.publisher}}
+    %li{"data-ng-repeat" => "novel in data.novels | filter:name "}
+      %h4 {{novel.title}} {{novel.author}}
