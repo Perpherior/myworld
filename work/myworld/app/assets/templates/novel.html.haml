@@ -6,4 +6,5 @@
 %br
   %ul
     %li{"data-ng-repeat" => "novel in data.novels | filter:name "}
-      %h4 {{novel.title}} {{novel.author}}
+      %h4
+        {{novel.title}} {{novel.author}}

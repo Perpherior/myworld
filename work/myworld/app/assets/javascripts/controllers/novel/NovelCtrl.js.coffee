@@ -1,5 +1,5 @@
 @NovelCtrl = ($scope, $location ,$http) ->
-  $scope.title = "My blog"
+  $scope.title = "My Books"
   $scope.data =
     novels: [{title: 'Loading novels...', author: ''}]
 
