@@ -1,0 +1,9 @@
+!!! 5
+%html{"data-ng-app"=>"novel"}
+  %div{"ng-controller" => "NovelCtrl"}
+    %h1 {{title}}
+  %form.navbar-search.pull-left
+    %input.search-query{:placeholder => "Search", :type => "text", "ng-model" => "newEntry.name1"} 
+    {{newEntry.name1}}
+  .container{'ng-model' => 'novel'}
+
