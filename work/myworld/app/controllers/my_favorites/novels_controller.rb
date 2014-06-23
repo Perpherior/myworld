@@ -1,6 +1,16 @@
 module MyFavorites
   class NovelsController < ApplicationController
-  	def index
-  	end
+    inherit_resources
+    respond_to :json
+
+    private
+    def build_resource_params
+      [novel_params]
+    end
+
+    def begin_of_association_chain
+      current_admin
+    end
+
   end
 end
