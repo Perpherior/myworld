@@ -1,12 +1,11 @@
 #= require_self
-#= require_tree ./controllers/novel
-#= require_tree ./directives/novel
+#= require_tree ./directives/main
+#= require_tree ./filters/main
 
-novel = angular.module('myworld',[])
-novel.filter "greet", ->
-  (name) ->
-  	"hello, "+ name + " !"
-# novel.config (['$routeProvider', ($routeProvider) ->
-#    $routeProvider.when('/my_favorites/novels', 
-#    	   { templateUrl: '../asset/novel.html.haml', controller: 'NovelCtrl' } )
-# 	 ])
+#= require_tree ./controllers/novel
+
+app = angular.module('app',['ngRoute'])
+app.config(['$routeProvider', ($routeProvider) ->
+  $routeProvider.when('/', { templateUrl: '../assets/novel.html.haml', controller: 'NovelCtrl' } )
+
+])
