@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   namespace :my_favorites do 
     resources :novels
   end
+
+  get '*path', to: 'main#index'
 end

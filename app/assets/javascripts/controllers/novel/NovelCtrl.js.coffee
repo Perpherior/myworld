@@ -1,4 +1,4 @@
-@NovelCtrl = ($scope, $location ,$http) ->
+@novelCtrl = ($scope, $location ,$http) ->
   $scope.title = "My Books"
   $scope.data =
     novels: [{title: 'Loading novels...', author: ''}]
@@ -14,5 +14,5 @@
   loadNovels()
 
 
-  $scope.viewNovel = (novelId) ->
-    $location.url('/my_favoriates/novels'+novelId)
+  # $scope.viewNovel = (novelId) ->
+  #   $location.url('/my_favoriates/novels'+novelId)

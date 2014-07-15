@@ -1,10 +1,11 @@
-%h1 {{title}}
-%form.navbar-search.pull-left
-  %input.search-query{:placeholder => "Search", :type => "text", "ng-model" => "name"} 
-    {{name}}
-.container
-%br
-  %ul
-    %li{"data-ng-repeat" => "novel in data.novels | filter:name "}
-      %h4
-        {{novel.title}} {{novel.author}}
+%body
+  %h1 {{title}}
+  %form.navbar-search.pull-left
+    %input.search-query{:placeholder => "Search", :type => "text", "ng-model" => "name"} 
+      {{name}}
+  .container
+  %br
+    %ul
+      %li{"data-ng-repeat" => "novel in data.novels | filter:name "}
+        %h4
+          {{novel.title}} {{novel.author}}

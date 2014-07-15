@@ -2,6 +2,7 @@
 %html{"ng-app"=>"app"}
   %head
     %title Myworld
+    %base{href: "/"}
     = stylesheet_link_tag    'application', media: 'all' 
     = javascript_include_tag 'application'
     = csrf_meta_tags
@@ -18,7 +19,7 @@
           %ul.nav
             %li= link_to "Admins register", '/admins/sign_up'
             %li= link_to "Profile Edit", edit_admin_registration_url
-            %li= link_to "My books", my_favorites_novels_url
+            %li= link_to "My books", '#/my_favorites/novels'
             %li= link_to "Cart"
             %li= link_to "Log out", '/admins/sign_out'
   .container{id: 'main'}
