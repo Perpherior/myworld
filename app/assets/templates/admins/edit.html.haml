@@ -1,0 +1,13 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title Profile
+  .panel-body
+    .avatar
+      %label Profile Picture
+      %img.thumbnail{:src => '{{admin.avatar_url}}'}
+    %p
+      %label Profile Name
+    %p
+      %input.input-large{:name => "name", :type => "text", :value => "{{admin.name}}"}
+    %p
+      %button.btn.btn-primary{"ng-click" => ""} Update 

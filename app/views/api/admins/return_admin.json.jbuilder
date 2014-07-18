@@ -1,0 +1,1 @@
+json.(@admin, :id, :email, :name, :avatar_url)

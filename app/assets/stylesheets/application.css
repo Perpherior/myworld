@@ -37,6 +37,9 @@
   padding: 30px;
 }
 
+#navbar {
+  padding-left: 150px;
+}
 #showNovels {
   margin-left: -20px;
 }

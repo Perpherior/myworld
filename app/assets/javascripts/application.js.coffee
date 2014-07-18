@@ -8,4 +8,7 @@
 
 #= require myWorld
 #= require_tree ./services/
+#= require_tree ./config/
+
 #= require_tree ./controllers/novels
+#= require_tree ./controllers/admins
