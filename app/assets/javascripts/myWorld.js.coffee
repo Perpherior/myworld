@@ -1,12 +1,9 @@
-#= require_self
-#= require_tree ./controllers/novel
-#= require_tree ./services/novel
-
-app = angular.module('app',['ngRoute'])
-app.config(['$routeProvider', '$locationProvider' , ($routeProvider, $locationProvider) ->
+app = angular.module('myWorldApp',['ngRoute','ngResource'])
+app.config ($routeProvider) ->
   $routeProvider
     .when( '/my_favorites/novels',
-      { templateUrl: '../assets/novel.html.haml', controller: 'novelCtrl' })
-
-  #$locationProvider.html5Mode(true) if window.history && window.history.pushState
-])
+      { templateUrl: '/assets/novels/novels.html.haml', controller: 'NovelCtrl' })
+    .when( '/my_favorites/novels/add',
+      { templateUrl: '/assets/novels/addNovel.html.haml', controller: 'AddNovelCtrl'})
+    .when( '/my_favorites/novels/:id',
+      { templateUrl: '/assets/novels/novel.html.haml', controller: 'ShowNovelCtrl'})

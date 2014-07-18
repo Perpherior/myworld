@@ -7,3 +7,5 @@
 #= require vendors/angular-resource
 
 #= require myWorld
+#= require_tree ./services/
+#= require_tree ./controllers/novels

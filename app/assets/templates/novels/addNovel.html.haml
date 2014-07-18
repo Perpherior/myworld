@@ -1,0 +1,18 @@
+%h1 {{title}}
+Title :
+%br
+%input{"data-ng-model" => "novel.title", :placeholder => "Title", :type => "text"}
+%br
+Author :
+%br
+%input{"data-ng-model" => "novel.author", :placeholder => "Author", :type => "text"}
+%br
+Publish Time :
+%br
+%input{"data-ng-model" => "novel.publish_time", :placeholder => "Publish Time", :type => "text"}
+%br
+Word Count :
+%br
+%input{"data-ng-model" => "novel.word_count", :placeholder => "Word Count", :type => "text"}
+%br
+%button.btn{"ng-click" => "addNovel()"} Create Book

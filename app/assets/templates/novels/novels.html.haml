@@ -1,0 +1,17 @@
+%body
+  %h1 {{title}}
+  %button.btn{"ng-click" => "addNovel()"} Add Book 
+  %br
+  %form.navbar-search.pull-left
+    %input.search-query{:placeholder => "Search", :type => "text", "ng-model" => "name"} 
+      {{name}}
+
+  .container
+  %br
+    %ul
+      %li{"data-ng-repeat" => "novel in novels | filter:name "}
+        %h4
+          {{novel.title}} {{novel.author}}  
+          .btn-group
+            %button.btn{"ng-click" => "showNovel(novel.id)"} Read 
+            %button.btn{"ng-click" => "deleteNovel($index)"} Delete 
