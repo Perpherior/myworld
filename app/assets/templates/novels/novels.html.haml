@@ -10,7 +10,7 @@
   %br
     %ul
       %li{"data-ng-repeat" => "novel in novels | filter:name "}
-        %h4
+        %h4{id:'showNovels'}
           {{novel.title}} {{novel.author}}  
           .btn-group
             %button.btn{"ng-click" => "showNovel(novel.id)"} Read 
