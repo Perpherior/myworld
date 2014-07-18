@@ -33,3 +33,14 @@
   margin-right: auto;
   margin-left: auto;
 }
+#main {
+  padding: 30px;
+}
+
+#showNovels {
+  margin-left: -20px;
+}
+
+ol,ul {
+  list-style:none;
+}

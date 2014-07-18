@@ -5,12 +5,10 @@ module MyFavorites
 
     private
     def build_resource_params
-      [novel_params]
+      [params.require(:novel).permit!]
     end
-
     def begin_of_association_chain
       current_admin
     end
-
   end
 end
