@@ -4,6 +4,7 @@
   .panel-body
     .avatar
       %label Profile Picture
+      %input{multiple: "", name: "files[]", "ng-disabled" => "disabled", type: "file"}
       %img.thumbnail{:src => '{{admin.avatar_url}}'}
     %p
       %label Profile Name
