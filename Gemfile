@@ -13,7 +13,7 @@ gem 'inherited_resources'
 gem 'devise'
 gem 'haml-rails'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
-
+gem 'will_paginate', '~> 3.0.5'
 group :assets do
   gem 'sass-rails', '~> 4.0.3'
   gem 'coffee-rails', '~> 4.0.0'
